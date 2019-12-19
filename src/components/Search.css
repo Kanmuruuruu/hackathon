@@ -1,0 +1,108 @@
+body{
+    background-image: url("../image/tram.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+.header img{
+    height: 25px;
+    filter: brightness(0);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 300px;
+    width: auto;
+}
+
+form input{
+    width: 80%;
+    margin: 10px 0;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+}
+
+h2{
+    margin: 0px 0 5px 0;
+    font-size: 1.5em;
+}
+
+.transport,
+.marche{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    margin-top:2px;
+    padding: 0;
+    background-color: whitesmoke;
+}
+
+.transport p,
+.marche p{
+    margin: 0;
+}
+
+.arrivee{
+    display: flex;
+    justify-content: center;
+}
+
+.ligne{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #61dafb;
+    border-radius: 50%;
+}
+
+.perturbation{
+    background-color: whitesmoke;
+}
+
+.perturbation div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.trajet{
+    background-color: burlywood;
+    margin: 0;
+}
+
+.trajet:last-child{
+    margin-bottom: 20px;
+}
+
+.widget {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.widget a img{
+    height: 40px;
+    width: auto;
+}
+
