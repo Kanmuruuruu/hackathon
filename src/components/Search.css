@@ -1,0 +1,38 @@
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+}
+
+form input{
+    width: 80%;
+    margin: 5px 0;
+}
+
+.transport,
+.marche{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    background-color: burlywood;
+}
+
+.transport p,
+.marche p{
+    margin: 0;
+}
+
+
+
+.ligne{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #61dafb;
+    border-radius: 50%;
+}
