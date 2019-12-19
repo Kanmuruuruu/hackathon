@@ -1,0 +1,7 @@
+.ImgContact{
+    background-image: url("../images/bus.jpg");
+    background-size: contain;
+    height: 250px;
+    width: auto;
+    background-repeat: no-repeat;
+}
