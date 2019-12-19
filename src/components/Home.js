@@ -1,10 +1,11 @@
 import React from 'react';
+import Mobilit from './Mobilit.js'
 
 
 const Home = () => {
     return(
         <div>
-            bonjour
+            <Mobilit/>
         </div>
     );
 }

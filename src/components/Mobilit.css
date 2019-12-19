@@ -1,0 +1,51 @@
+.Font{
+}
+
+.Defi{
+    background-image: url("../images/tram-cathedrale.jpg");
+    background-size: contain;
+    height: 200px;
+    width: auto;
+    background-position: no-repeat;
+}
+
+.Mobilite{
+    font-size: 12px;
+}
+
+.Title{
+    font-size: 8px;
+}
+
+.Text{
+    font-size: 8px;
+}
+
+.Challenge{
+    font-size: 8px;
+}
+
+.DefiName{
+    font-size: 8px;
+}
+.Challenge li{
+    display: inline;
+    font-size: 12px;
+}
+
+.Compteur{
+    font-size: 8px;
+}
+
+.Points{
+    font-size: 10px;
+}
+
+.Echange{
+    font-size: 8px;
+    text-align: center;
+}
+
+.Explication{
+    font-size: 10px;
+}
