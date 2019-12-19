@@ -82,15 +82,6 @@ const Search = () => {
         return (<p>: {heure[0] + heure[1]}:{heure[2] + heure[3]}</p>)
     }
 
-    /*
-    const getCoordonnees = async adresse => {
-        console.log("google");
-        const response = await fetch("http://maps.googleapis.com/maps/api/geocode/json?address=546%20rue%20Baruch%20de%20Spinoza,%20Avignon&sensor=false", {headers: {Authorization: 'AIzaSyCbVcBeID8mWQpln23lcSM_1spP5BEP47w'}});
-        const data = await response.json();
-        console.log(data);
-    }
-    */
-
     const getItineraire = async () => {
         const lat = coordonnees.lng;
         const lng = coordonnees.lat;
@@ -161,17 +152,6 @@ const Search = () => {
 
     return (
         <div>
-            <div className="header">
-                <a href="http://www.google.com">
-                    <img src={require("../image/streamline-icon-lock-unlock-1@40x40.png")} alt=""/>
-                </a>
-                <a href="http://www.google.com">
-                    <img src={require("../image/developmentdurable.png")} alt=""/>
-                </a>
-                <a href="http://www.google.com">
-                    <img src={require("../image/Etoile.png")} alt=""/>
-                </a>
-            </div>
             <form onSubmit={changeCoordonnees}>
                 <input id="adresse" type="text" placeholder="Destination"/>
                 <button type="submit">Chercher un itinéraire</button>
@@ -218,10 +198,10 @@ const Search = () => {
                 <a href="http://www.google.com">
                     <img src={require("../image/streamline-icon-biking-person@40x40.png")} alt=""/>
                 </a>
-                <a href="http://www.google.com">
+                <a href="https://www.reseau-tao.fr/27-Bus.html">
                     <img src={require("../image/streamline-icon-truck-2@40x40.png")} alt=""/>
                 </a>
-                <a href="http://www.google.com">
+                <a href="https://www.reseau-tao.fr/45-Tram.html">
                     <img src={require("../image/streamline-icon-cable-car-1@40x40.png")} alt=""/>
                 </a>
                 <a href="http://www.google.com">
