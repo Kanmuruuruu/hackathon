@@ -1,0 +1,26 @@
+.ImgCClient{
+    background-image: url("../images/bandeau_tao.jpg");
+    background-size: contain;
+    height: 400px;
+    width: auto;
+    background-repeat: no-repeat;
+}
+
+.Title{
+    margin-top: 3px;
+}
+
+.QRCode{
+    display: flex;
+    align-items: right;
+    height: 100px;
+    width: 100px;
+}
+
+.NbPoints{
+    font-size: 5px;
+}
+
+.TotalPoints{
+    font-size: 5px;
+}
