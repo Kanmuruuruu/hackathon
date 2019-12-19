@@ -1,14 +1,28 @@
+body{
+    background-image: url("../image/tram.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+.header img{
+    height: 25px;
+    filter: brightness(0);
+}
+
 form{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0;
-    background-image: url("../image/tram.jpg");
-    background-size: cover;
     height: 300px;
     width: auto;
-    background-repeat: no-repeat;
 }
 
 form input{
@@ -58,6 +72,10 @@ h2{
 }
 
 .perturbation{
+    background-color: whitesmoke;
+}
+
+.perturbation div{
     display: flex;
     justify-content: space-evenly;
 }
@@ -73,3 +91,18 @@ h2{
     background-color: burlywood;
     margin: 0;
 }
+
+.trajet:last-child{
+    margin-bottom: 20px;
+}
+
+.widget {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.widget a img{
+    height: 40px;
+    width: auto;
+}
+
