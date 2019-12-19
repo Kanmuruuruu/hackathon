@@ -1,0 +1,60 @@
+.titre{
+    background-image: url("https://www.tourisme-orleansmetropole.com/sites/www.tourisme-orleansmetropole.com/files/styles/paragraphes_background/public/thumbnails/image/velo-gare-dorleans.jpg?itok=m1sucvAf");
+    width: auto;
+    height: 20vh;
+    background-size: cover;
+
+}
+
+.card-card-a {
+    text-align:center;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    border-width: thick ;
+    border-style: inset;
+    border-color: burlywood;
+    margin-bottom: 10px;
+    background-image: url("https://www.lamontagne.fr/static/bloc/pagesStatiques/publi_redac/images/orleansMetropol_velo2.jpg");
+    background-size: cover;
+}
+
+.card-card-b {
+    text-align:center;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    border-width: thick ;
+    border-style: inset;
+    border-color: burlywood;
+    margin-bottom: 10px;
+}
+
+
+
+.card-card-c {
+    text-align:center;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    border-width: thick ;
+    border-style: inset;
+    border-color: burlywood;
+    margin-bottom: 10px;
+
+}
+
+.card {
+    width: 400px;
+    margin: 40px auto;
+    background-color: white;
+
+}
+
+.card-para {
+    font-family: 'Playfair Display', serif;
+    color: #777;
+}
+
+.card-title {
+    text-align:center;
+    text-transform:uppercase;
+    font-weight: bold;
+}
