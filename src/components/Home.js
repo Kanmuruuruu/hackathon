@@ -1,10 +1,10 @@
 import React from 'react';
-
+import CompteClient from './CompteClient.js'
 
 const Home = () => {
     return(
         <div>
-            bonjour
+            <CompteClient/>
         </div>
     );
 }

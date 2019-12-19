@@ -9,14 +9,27 @@ function CompteClient() {
       <div className="Title">
         <h1>Compte Client</h1> 
       </div>
+      <div className="Login">
+        <h2>Nom: JEAN</h2>
+        <h2>Prénom: Arthur</h2>
+        <h2>Adresse: 150 avenue du Bonheur 45000 ORLEANS</h2>
+      </div>
       <div className="QRCode">
         <img src={require(`../images/QR-Code-TAO.png`)}/>
       </div>
       <div className="Pieton">
-        <li><img src={require(`../images/Marcheur.png`)}/></li>       
-        <li><img src={require(`../images/Velo.png`)}/></li>  
-        <li><img src={require(`../images/Transports.png`)}/></li>
-        <li><img src={require(`../images/Parking.png`)}/></li>
+        <li>
+          <button><img src={require(`../images/Marcheur.png`)}></img></button>
+        </li>       
+        <li>
+          <button><img src={require(`../images/Velo.png`)}/></button>
+        </li>  
+        <li>
+          <button><img src={require(`../images/Transports.png`)}/></button>
+        </li>
+        <li>
+          <button><img src={require(`../images/Parking.png`)}/></button>
+        </li>
       </div>       
       <div className="NbPoints">
         <h1>Nombre de points TAO accumulés :</h1>
