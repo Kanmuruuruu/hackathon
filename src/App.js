@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Home from './components/Home';
 import './App.css';
@@ -20,6 +21,7 @@ function App() {
             <Route path="/favoris" component={Fav}/>
         </Switch>
     </div>
+
   );
 }
 
