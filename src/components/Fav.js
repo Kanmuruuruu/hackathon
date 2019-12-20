@@ -36,7 +36,7 @@ const Fav = () => {
 
     useEffect(()=>{
         saveBus();
-    })
+    });
 
 
     let taskTable = [task1, task2, task3];
