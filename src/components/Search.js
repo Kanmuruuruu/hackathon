@@ -155,7 +155,7 @@ const Search = () => {
     return (
         <div className="SearchWidget">
             <div>
-                <form onSubmit={changeCoordonnees}>
+                <form className="form" onSubmit={changeCoordonnees}>
                     <input id="adresse" type="text" placeholder="Destination"/>
                     <button className="buttonForm" type="submit">Chercher un itinéraire</button>
                 </form>

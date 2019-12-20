@@ -18,15 +18,27 @@ body{
     filter: brightness(0);
 }
 
-form{
+.form{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    height: 300px;
+    margin: 400px 0 100px 0;
     width: auto;
 }
+
+.form input{
+    border: burlywood 2px solid;
+    border-radius: 20px;
+    background-color: whitesmoke;
+}
+
+.form button{
+    border: burlywood 2px solid;
+    border-radius: 20px;
+    background-color: whitesmoke;
+}
+
 
 #adresse{
     width: 80%;
