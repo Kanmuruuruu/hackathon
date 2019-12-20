@@ -1,13 +1,17 @@
 import React from 'react';
-import Search from "./Search";
-import './Home.css';
-
+import Contact from './Contact';
+import Fav from './Fav';
+import Mobilit from './Mobilit.js';
+import CompteClient from './CompteClient.js';
 
 const Home = () => {
     return(
-        <div className="all">
+        <div>
+            <Contact/>
+                <Fav/>
+            <Mobilit/>
+            <CompteClient/>
         </div>
-    );
-}
-
-export default Home;
+      );
+  
+  export default Home;
