@@ -1,9 +1,7 @@
 
+import React from 'react';
 import Home from './components/Home';
 import './App.css';
-import Velo from "./Components/Velo+";
-import Veloform from "./Components/Veloform";
-
 
 function App() {
   return (

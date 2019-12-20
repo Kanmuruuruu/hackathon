@@ -10,11 +10,12 @@
     margin-top: 3px;
 }
 
-.QRCode{
+.QRCode {
     display: flex;
-    align-items: right;
-    height: 100px;
-    width: 100px;
+    justify-items: center;
+    height: 250px;
+    width: 250px;
+    margin: 0 auto ;
 }
 
 .NbPoints{
@@ -24,3 +25,57 @@
 .TotalPoints{
     font-size: 5px;
 }
+
+.Login {
+    background-color: burlywood;
+    width : 320px;
+    justify-content: center;
+    justify-content: space-around;
+    font-size: 16px;
+
+
+}
+
+.Compte {
+    font-size: 10px;
+}
+
+.Title{
+    font-size: 15px;
+}
+
+.Pieton{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style-type: none;
+
+}
+
+.Avatar{
+    margin: 0 auto ;
+    width: 200px;
+}
+
+.Icone-li{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    padding-right: 12px;
+    margin-left: 2px;
+    margin-bottom: 10px;
+
+
+
+
+}
+
+.Icone-li img{
+    width: 40px;
+    height: auto;
+}
+.Compteur{
+    font-size: 15px;
+}
+
