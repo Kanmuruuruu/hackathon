@@ -1,7 +1,26 @@
-.ImgContact{
+
+body {
     background-image: url("../images/bus.jpg");
-    background-size: contain;
-    height: 250px;
-    width: auto;
     background-repeat: no-repeat;
+    background-position: initial;
+    background-size: 1200px;
+}
+
+
+.Contact {
+
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    justify-content:space-evenly;
+}
+
+.mdp {
+
+    padding-bottom: 20px;
+}
+
+.email {
+
+    padding-bottom: 40px;
 }
