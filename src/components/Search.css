@@ -1,7 +1,10 @@
 body{
     background-image: url("../image/tram.jpg");
-    background-size: cover;
     background-repeat: no-repeat;
+    width: 100%;
+    background-color: burlywood;
+    background-position: center;
+    background-size: auto;
 }
 
 .header{
@@ -25,9 +28,17 @@ form{
     width: auto;
 }
 
-form input{
+#adresse{
     width: 80%;
     margin: 10px 0;
+    text-align: center;
+    height: 30px;
+    font-size: 1.2em;
+}
+
+.buttonForm{
+    height: 30px;
+    font-size: 1em;
 }
 
 h1{
@@ -96,9 +107,10 @@ h2{
     margin-bottom: 20px;
 }
 
-.widget {
+.widget{
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 30px;
 }
 
 .widget a img{
@@ -106,3 +118,9 @@ h2{
     width: auto;
 }
 
+.SearchWidget{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh;
+}

@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './Search.css';
+import NavBar from "./NavBar";
 
 
 function returnString(readable) {  // Return an array with the string to make a perfectly readable sentence.
@@ -151,51 +152,56 @@ const Search = () => {
     }
 
     return (
-        <div>
-            <form onSubmit={changeCoordonnees}>
-                <input id="adresse" type="text" placeholder="Destination"/>
-                <button type="submit">Chercher un itinéraire</button>
-            </form>
+        <div className="SearchWidget">
+            <div className="navbar">
+                <NavBar/>
+            </div>
+            <div>
+                <form onSubmit={changeCoordonnees}>
+                    <input id="adresse" type="text" placeholder="Destination"/>
+                    <button className="buttonForm" type="submit">Chercher un itinéraire</button>
+                </form>
 
-            {perturbation.length ?
-                <div className="perturbation">
-                    <h2>Perturbation</h2>
-                    <div>
-                        {perturbation.map((pert, index) => {
-                            return (
-                                <div className="flex" key={index}>
-                                    <div style={{color: pert.severity.color}}>
-                                        {pert.status.toUpperCase()}
+                {perturbation.length ?
+                    <div className="perturbation">
+                        <h2>Perturbation</h2>
+                        <div>
+                            {perturbation.map((pert, index) => {
+                                return (
+                                    <div className="flex" key={index}>
+                                        <div style={{color: pert.severity.color}}>
+                                            {pert.status.toUpperCase()}
+                                        </div>
+                                        {pert.cause.toLowerCase()}
                                     </div>
-                                    {pert.cause.toLowerCase()}
-                                </div>
-                            );
-                        })}
-                    </div>
-                </div>
-                :
-                null
-            }
-            {
-                journeys ?
-                    <div className="">
-                        {journeys.map((j, index) => {
-                            const it = j.sections;
-                            console.log(it);
-                            return (
-                                <div className="trajet" key={index}>
-                                    <h2>Trajet {index + 1}</h2>
-                                    {it.map((it, index) => renduIt(index, it))}
-                                </div>
-                            );
-                        })
-                        }
+                                );
+                            })}
+                        </div>
                     </div>
                     :
                     null
-            }
+                }
+                {
+                    journeys ?
+                        <div className="">
+                            {journeys.map((j, index) => {
+                                const it = j.sections;
+                                console.log(it);
+                                return (
+                                    <div className="trajet" key={index}>
+                                        <h2>Trajet {index + 1}</h2>
+                                        {it.map((it, index) => renduIt(index, it))}
+                                    </div>
+                                );
+                            })
+                            }
+                        </div>
+                        :
+                        null
+                }
+            </div>
             <div className="widget">
-                <a href="http://www.google.com">
+                <a href="https://www.reseau-tao.fr/48-Velo.html">
                     <img src={require("../image/streamline-icon-biking-person@40x40.png")} alt=""/>
                 </a>
                 <a href="https://www.reseau-tao.fr/27-Bus.html">
@@ -204,10 +210,10 @@ const Search = () => {
                 <a href="https://www.reseau-tao.fr/45-Tram.html">
                     <img src={require("../image/streamline-icon-cable-car-1@40x40.png")} alt=""/>
                 </a>
-                <a href="http://www.google.com">
+                <a href="https://www.reseau-tao.fr/46-Parcs-Relais-Tram.html">
                     <img src={require("../image/streamline-icon-parking-p-1@40x40.png")} alt=""/>
                 </a>
-                <a href="http://www.google.com">
+                <a href="https://www.reseau-tao.fr/33-Les-tickets.html">
                     <img src={require("../image/streamline-icon-transportation-ticket-train@40x40.png")} alt=""/>
                 </a>
             </div>

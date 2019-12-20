@@ -1,12 +1,11 @@
 import React from 'react';
-import NavBar from "./NavBar";
 import Search from "./Search";
+import './Home.css';
 
 
 const Home = () => {
     return(
-        <div>
-            <NavBar/>
+        <div className="all">
             <Search />
         </div>
     );
