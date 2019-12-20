@@ -8,6 +8,12 @@
 
 .Title{
     margin-top: 3px;
+    background-color: whitesmoke;
+}
+
+.Title h1{
+    color: burlywood;
+    font-size: 35px;
 }
 
 .QRCode {
@@ -17,31 +23,19 @@
     width: 250px;
     margin: 0 auto ;
 }
-
-.NbPoints{
-    font-size: 5px;
-}
-
-.TotalPoints{
-    font-size: 5px;
-}
-
 .Login {
     background-color: burlywood;
-    width : 320px;
+    width : 100%;
     justify-content: center;
     justify-content: space-around;
-    font-size: 16px;
-
-
 }
 
 .Compte {
-    font-size: 10px;
+    margin: 0;
+    padding: 0;
 }
 
 .Title{
-    font-size: 15px;
 }
 
 .Pieton{
@@ -49,6 +43,7 @@
     flex-direction: column;
     justify-content: space-around;
     list-style-type: none;
+    background-color: whitesmoke;
 
 }
 
@@ -65,17 +60,27 @@
     padding-right: 12px;
     margin-left: 2px;
     margin-bottom: 10px;
-
-
-
-
+    background-color: transparent;
 }
 
 .Icone-li img{
     width: 40px;
     height: auto;
+    border: burlywood solid 2px;
+    padding: 10px;
+    border-radius: 20%;
+    background-color: burlywood;
 }
 .Compteur{
-    font-size: 15px;
+    background-color: whitesmoke;
 }
 
+.compteurnombre{
+    background-color: burlywood;
+    padding: 5px;
+    border-radius: 20%;
+}
+
+.QRCode{
+    margin: 20px auto;
+}

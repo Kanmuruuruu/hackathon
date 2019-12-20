@@ -5,13 +5,14 @@ import Mobilit from './Mobilit.js';
 import CompteClient from './CompteClient.js';
 
 const Home = () => {
-    return(
+    return (
         <div>
             <Contact/>
-                <Fav/>
+            <Fav/>
             <Mobilit/>
             <CompteClient/>
         </div>
-      );
+    );
+}
   
   export default Home;

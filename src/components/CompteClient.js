@@ -1,4 +1,5 @@
 import React , {useState} from 'react';
+import Widget from './Widget';
 import './CompteClient.css';
 
 function CompteClient() {
@@ -11,8 +12,6 @@ function CompteClient() {
 
   return (
     <div className="Compte">
-      <div className="ImgCClient">
-      </div>
       <div className="Title">
         <h1>Compte Client</h1> 
       </div>
@@ -26,25 +25,25 @@ function CompteClient() {
         <img src={require(`../images/QR-Code-TAO.png`)}/>
       </div>
         <div className="Pieton">
+            <div className="Icone-li">
+                  <li>
+                      <img onClick={setScore} id="1" src={require(`../images/Marcheur.png`)}></img>
+                  </li>
+                  <li>
+                      <img onClick={setScore} id="10" src={require(`../images/Velo.png`)}/>
+                  </li>
+                  <li>
+                      <img onClick={setScore} id="5" src={require(`../images/Transports.png`)}/>
+                  </li>
+                  <li>
+                      <img onClick={setScore} id="2" src={require(`../images/Parking.png`)}/>
+                  </li>
+            </div>
+            <div className="Compteur">
+                <p>Nombre de points TAO accumulés : <span className="compteurnombre">{compteur}</span></p>
+            </div>
         </div>
-        <div className="Icone-li">
-              <li>
-                  <img onClick={setScore} id="1" src={require(`../images/Marcheur.png`)}></img>
-              </li>
-              <li>
-                  <img onClick={setScore} id="10" src={require(`../images/Velo.png`)}/>
-              </li>
-              <li>
-                  <img onClick={setScore} id="5" src={require(`../images/Transports.png`)}/>
-              </li>
-              <li>
-                  <img onClick={setScore} id="2" src={require(`../images/Parking.png`)}/>
-              </li>
-        </div>
-        <div className="Compteur">
-            <p>Nombre de points TAO accumulés : {compteur}</p>
-        </div>
-
+    <Widget />
     </div>
   );
 };

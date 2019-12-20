@@ -16,8 +16,8 @@ function App() {
         <NavBar />
         <Switch>
             <Route path="/search" component={Search}/>
-            <Route path="/mobilite" components={Mobilit}/>
-            <Route path="/client" components={CompteClient}/>
+            <Route path="/mobilite" component={Mobilit}/>
+            <Route path="/client" component={CompteClient}/>
             <Route path="/favoris" component={Fav}/>
         </Switch>
     </div>

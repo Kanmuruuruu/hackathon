@@ -7,9 +7,8 @@
 }
 
 .Title{
-    font-size: 14px;
     font-style: italic;
-    color: rgb(55, 245, 55);
+    color: forestgreen;
 }
 
 .Text{
@@ -52,23 +51,19 @@
     width: auto;
 }
 
-.Title .Planet{
-    height: 200px;
-    width: auto;
-}
 .Compteur{
     justify-content: center;
     line-height: none;
 }
 
 .Points{
-    margin:5px;
     background-color: burlywood;
 }
 
 .Echange{
     height: auto;
     width: auto;
+    list-style: none;
 }
 
 .Echange li{
@@ -77,5 +72,25 @@
 
 }
 .Explication{
-   font-size: 14px;
+}
+
+.Mobilit{
+    background-color: whitesmoke;
+}
+.Mobilite h1{
+    color: black;
+    margin: auto;
+}
+
+.Mobilite{
+    height: 30px;
+    background-color: burlywood;
+}
+
+.Points h4{
+    width: 100%;
+}
+
+.Challenge h4{
+    padding: auto;
 }

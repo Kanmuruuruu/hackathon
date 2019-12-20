@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+import Widget from './Widget';
 import './Favoris.css';
 
 const Fav = () => {
@@ -51,7 +52,7 @@ const Fav = () => {
     };
 
         return (
-            <div>
+            <div className="Favorite">
                 <h1>VOS FAVORIS</h1>
 
 
@@ -111,7 +112,7 @@ const Fav = () => {
                     </div>
                 ))}
 
-
+            <Widget />
             </div>
         )
     };

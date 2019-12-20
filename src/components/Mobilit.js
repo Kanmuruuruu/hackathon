@@ -1,9 +1,10 @@
 import React from 'react';
+import Widget from './Widget';
 import './Mobilit.css';
 
-function Mobilit() {
+const Mobilit = () => {
   return (
-    <div className>
+    <div className="Mobilit">
       <div className="Defi">
 
       </div>
@@ -18,7 +19,7 @@ function Mobilit() {
         <p>Comptabilisez vos déplacements à vélo à pied en transport en commun mais aussi l'utilisation des parkings relais</p>
       </div>
       <div className="Challenge">
-        <h3>4 Défis => Points TAO</h3> 
+        <h4>4 Défis => Points TAO</h4>
       </div>
       <div className="DefiName">
           <li>
@@ -64,6 +65,7 @@ function Mobilit() {
       <div className="Explication">
         <p>Si vous souhaitez participer à un ou à plusieurs défis KEOLIS, merci de bien vouloir vous enregistrer pour valider votre participation</p>
       </div>
+        <Widget />
     </div>
   );
 }
