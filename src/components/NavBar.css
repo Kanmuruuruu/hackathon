@@ -1,0 +1,10 @@
+.active img{
+    filter: invert(100%);
+}
+
+.header{
+    background-color: burlywood;
+    width:100%;
+    margin: 0;
+    padding: 10px 0;
+}
