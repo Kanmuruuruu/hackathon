@@ -1,0 +1,81 @@
+.Defi{
+    background-size: contain;
+    background-image: url("../images/tram-cathedrale.jpg");
+    height: 250px;
+    width: auto;
+    background-repeat: no-repeat;
+}
+
+.Title{
+    font-size: 14px;
+    font-style: italic;
+    color: rgb(55, 245, 55);
+}
+
+.Text{
+    margin: 5px;
+}
+
+.Challenge{
+    background-color: burlywood;
+}
+
+
+.DefiName{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+
+.DefiName li{
+    display: inline;
+    margin: 10px;
+}
+
+
+.DefiName li p{
+    padding: 0;
+    margin: 0;
+}
+.Challenge li{
+    display: inline;
+}
+
+.DefiName img{
+    height: 30px;
+    width: auto;
+}
+
+.Echange .img2{
+    height: 30px;
+    width: auto;
+}
+
+.Title .Planet{
+    height: 200px;
+    width: auto;
+}
+.Compteur{
+    justify-content: center;
+    line-height: none;
+}
+
+.Points{
+    margin:5px;
+    background-color: burlywood;
+}
+
+.Echange{
+    height: auto;
+    width: auto;
+}
+
+.Echange li{
+    margin: 0px;
+    padding: 0px;
+
+}
+.Explication{
+   font-size: 14px;
+}
