@@ -8,7 +8,4 @@ const Home = () => {
             <Mobilit/>
             <CompteClient/>
         </div>
-    );
-}
-
 export default Home;
