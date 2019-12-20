@@ -1,51 +1,81 @@
-.Font{
-}
-
 .Defi{
-    background-image: url("../images/tram-cathedrale.jpg");
     background-size: contain;
-    height: 200px;
+    background-image: url("../images/tram-cathedrale.jpg");
+    height: 250px;
     width: auto;
-    background-position: no-repeat;
-}
-
-.Mobilite{
-    font-size: 12px;
+    background-repeat: no-repeat;
 }
 
 .Title{
-    font-size: 8px;
+    font-size: 14px;
+    font-style: italic;
+    color: rgb(55, 245, 55);
 }
 
 .Text{
-    font-size: 8px;
+    margin: 5px;
 }
 
 .Challenge{
-    font-size: 8px;
+    background-color: burlywood;
 }
 
+
 .DefiName{
-    font-size: 8px;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+
+.DefiName li{
+    display: inline;
+    margin: 10px;
+}
+
+
+.DefiName li p{
+    padding: 0;
+    margin: 0;
 }
 .Challenge li{
     display: inline;
-    font-size: 12px;
 }
 
+.DefiName img{
+    height: 30px;
+    width: auto;
+}
+
+.Echange .img2{
+    height: 30px;
+    width: auto;
+}
+
+.Title .Planet{
+    height: 200px;
+    width: auto;
+}
 .Compteur{
-    font-size: 8px;
+    justify-content: center;
+    line-height: none;
 }
 
 .Points{
-    font-size: 10px;
+    margin:5px;
+    background-color: burlywood;
 }
 
 .Echange{
-    font-size: 8px;
-    text-align: center;
+    height: auto;
+    width: auto;
 }
 
+.Echange li{
+    margin: 0px;
+    padding: 0px;
+
+}
 .Explication{
-    font-size: 10px;
+   font-size: 14px;
 }

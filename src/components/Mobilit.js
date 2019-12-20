@@ -3,45 +3,66 @@ import './Mobilit.css';
 
 function Mobilit() {
   return (
-    <div className="Font">
+    <div className>
       <div className="Defi">
-        
+
       </div>
       <div className="Mobilite">
         <h1>Mobilité Responsable</h1>
       </div>
       <div className="Title">
-        <h2>Et si vous aussi vous oeuvriez pour la planète</h2>
+        <p>Keolis vous propose de réaliser des défis responsables</p>
+        <p>Et si vous aussi vous oeuvriez pour la planète</p>
       </div>
       <div className="Text">
-        <p>Keolis vous propose de réaliser des défis 
-          responsable bons pour la planète, 
-        votre santé et votre porte-monnaie</p>
-        <p>En comptabilisant vos déplacements réalisés à vélo, à pied ou en transport en commun mais aussi votre utilisation des parkings relais</p>
+        <p>Comptabilisez vos déplacements à vélo à pied en transport en commun mais aussi l'utilisation des parkings relais</p>
       </div>
       <div className="Challenge">
-        <h3>4 Défis vous sont proposez vous permettant de collecter des points TAO</h3> 
+        <h3>4 Défis => Points TAO</h3> 
       </div>
       <div className="DefiName">
-          <li>Le "DEFI PED"</li>
-            <p className="Compteur">A chaque kilomètre parcouru à pied obtenez 1 point TAO</p>
-          <li>Le "DEFI VEL"</li>
-            <p className="Compteur">Tous les 10 kilomètres parcourus en vélo obtenez 10 points TAO</p>
-          <li>Le "DEFI FLEX"</li>
-            <p className="Compteur">Tous les 10 compostages de tickets obtenez 5 points TAO</p>
-          <li>Le "DEFI PARK+"</li>
-            <p className="Compteur">Toutes les 3 utilisations de l'un de nos parking relais obtenez 2 points TAO</p>
+          <li>
+            <img src={require(`../images/Marcheur.png`)}/>
+            <h4>DEFI PED</h4>
+            <p className="Compteur">1 Pied=1 point TAO</p>
+          </li>
+          <li>
+            <img src={require(`../images/Velo.png`)}/> 
+            <h4>DEFI VELO+</h4>
+              <p className="Compteur">10 Vélo=10 points TAO</p>           
+          </li>
+          <li>
+            <img className="img" src={require(`../images/Transports.png`)}/> 
+            <h4>DEFI FLEX</h4>
+            <p className="Compteur">10 QRCode=5 points TAO</p>         
+          </li>
+          <li>
+            <img src={require(`../images/Parking.png`)}/> 
+            <h4>DEFI PARK+</h4>
+            <p className="Compteur">3 Parkings=2 points TAO</p>        
+          </li>
       </div>
       <div className="Points">  
-        <h4>Les points TAO sont échangeables contre</h4>
+        <h4>Les points TAO sont échangeables</h4>
       </div>
       <div className="Echange">
+        <li>
+          <img className="img2" src={require(`../images/Ticket.png`)}/> 
           <p>Des réductions sur les différents trajets ou abonnement TAO</p>
+        </li>
+        <li>
+          <img className="img2" src={require(`../images/Panier.png`)}/> 
           <p>Des paniers de légumes et fruits négociés avec des maraîchers locaux</p>
+        </li>
+        <li>
+          <img className="img2" src={require(`../images/Brush.png`)}/> 
+          <img className="img2" src={require(`../images/Bib.png`)}/>     
+          <img className="img2" src={require(`../images/Couverts.png`)}/> 
           <p>Des produits de premières nécessités négociés avec nos enseignes partenaires</p>
+        </li>
       </div>
       <div className="Explication">
-        <h5>Si vous souhaitez participer à l'un ou à plusieurs défis KAOLIS, merci de bien vouloir vous enregistrer pour valider votre participation</h5>
+        <p>Si vous souhaitez participer à un ou à plusieurs défis KEOLIS, merci de bien vouloir vous enregistrer pour valider votre participation</p>
       </div>
     </div>
   );
