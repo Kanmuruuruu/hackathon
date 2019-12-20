@@ -6,7 +6,6 @@ import './Home.css';
 const Home = () => {
     return(
         <div className="all">
-            <Search />
         </div>
     );
 }

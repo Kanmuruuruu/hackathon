@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './Search.css';
 import NavBar from "./NavBar";
+import Widget from "./Widget";
 
 
 function returnString(readable) {  // Return an array with the string to make a perfectly readable sentence.
@@ -135,7 +136,7 @@ const Search = () => {
     }
 
     useEffect(() => {
-        console.log("bonjour")
+        console.log("bonjour Monsieur")
         getItineraire();
     }, [coordonnees])
 
@@ -153,9 +154,6 @@ const Search = () => {
 
     return (
         <div className="SearchWidget">
-            <div className="navbar">
-                <NavBar/>
-            </div>
             <div>
                 <form onSubmit={changeCoordonnees}>
                     <input id="adresse" type="text" placeholder="Destination"/>
@@ -200,23 +198,7 @@ const Search = () => {
                         null
                 }
             </div>
-            <div className="widget">
-                <a href="https://www.reseau-tao.fr/48-Velo.html">
-                    <img src={require("../image/streamline-icon-biking-person@40x40.png")} alt=""/>
-                </a>
-                <a href="https://www.reseau-tao.fr/27-Bus.html">
-                    <img src={require("../image/streamline-icon-truck-2@40x40.png")} alt=""/>
-                </a>
-                <a href="https://www.reseau-tao.fr/45-Tram.html">
-                    <img src={require("../image/streamline-icon-cable-car-1@40x40.png")} alt=""/>
-                </a>
-                <a href="https://www.reseau-tao.fr/46-Parcs-Relais-Tram.html">
-                    <img src={require("../image/streamline-icon-parking-p-1@40x40.png")} alt=""/>
-                </a>
-                <a href="https://www.reseau-tao.fr/33-Les-tickets.html">
-                    <img src={require("../image/streamline-icon-transportation-ticket-train@40x40.png")} alt=""/>
-                </a>
-            </div>
+            <Widget/>
         </div>
     );
 }
