@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './Search.css';
+import NavBar from "./NavBar";
+import Widget from "./Widget";
 
 
 function returnString(readable) {  // Return an array with the string to make a perfectly readable sentence.
@@ -82,15 +84,6 @@ const Search = () => {
         return (<p>: {heure[0] + heure[1]}:{heure[2] + heure[3]}</p>)
     }
 
-    /*
-    const getCoordonnees = async adresse => {
-        console.log("google");
-        const response = await fetch("http://maps.googleapis.com/maps/api/geocode/json?address=546%20rue%20Baruch%20de%20Spinoza,%20Avignon&sensor=false", {headers: {Authorization: 'AIzaSyCbVcBeID8mWQpln23lcSM_1spP5BEP47w'}});
-        const data = await response.json();
-        console.log(data);
-    }
-    */
-
     const getItineraire = async () => {
         const lat = coordonnees.lng;
         const lng = coordonnees.lat;
@@ -143,7 +136,7 @@ const Search = () => {
     }
 
     useEffect(() => {
-        console.log("bonjour")
+        console.log("bonjour Monsieur")
         getItineraire();
     }, [coordonnees])
 
@@ -160,77 +153,52 @@ const Search = () => {
     }
 
     return (
-        <div>
-            <div className="header">
-                <a href="http://www.google.com">
-                    <img src={require("../image/streamline-icon-lock-unlock-1@40x40.png")} alt=""/>
-                </a>
-                <a href="http://www.google.com">
-                    <img src={require("../image/developmentdurable.png")} alt=""/>
-                </a>
-                <a href="http://www.google.com">
-                    <img src={require("../image/Etoile.png")} alt=""/>
-                </a>
-            </div>
-            <form onSubmit={changeCoordonnees}>
-                <input id="adresse" type="text" placeholder="Destination"/>
-                <button type="submit">Chercher un itinéraire</button>
-            </form>
+        <div className="SearchWidget">
+            <div>
+                <form onSubmit={changeCoordonnees}>
+                    <input id="adresse" type="text" placeholder="Destination"/>
+                    <button className="buttonForm" type="submit">Chercher un itinéraire</button>
+                </form>
 
-            {perturbation.length ?
-                <div className="perturbation">
-                    <h2>Perturbation</h2>
-                    <div>
-                        {perturbation.map((pert, index) => {
-                            return (
-                                <div className="flex" key={index}>
-                                    <div style={{color: pert.severity.color}}>
-                                        {pert.status.toUpperCase()}
+                {perturbation.length ?
+                    <div className="perturbation">
+                        <h2>Perturbation</h2>
+                        <div>
+                            {perturbation.map((pert, index) => {
+                                return (
+                                    <div className="flex" key={index}>
+                                        <div style={{color: pert.severity.color}}>
+                                            {pert.status.toUpperCase()}
+                                        </div>
+                                        {pert.cause.toLowerCase()}
                                     </div>
-                                    {pert.cause.toLowerCase()}
-                                </div>
-                            );
-                        })}
-                    </div>
-                </div>
-                :
-                null
-            }
-            {
-                journeys ?
-                    <div className="">
-                        {journeys.map((j, index) => {
-                            const it = j.sections;
-                            console.log(it);
-                            return (
-                                <div className="trajet" key={index}>
-                                    <h2>Trajet {index + 1}</h2>
-                                    {it.map((it, index) => renduIt(index, it))}
-                                </div>
-                            );
-                        })
-                        }
+                                );
+                            })}
+                        </div>
                     </div>
                     :
                     null
-            }
-            <div className="widget">
-                <a href="http://www.google.com">
-                    <img src={require("../image/streamline-icon-biking-person@40x40.png")} alt=""/>
-                </a>
-                <a href="http://www.google.com">
-                    <img src={require("../image/streamline-icon-truck-2@40x40.png")} alt=""/>
-                </a>
-                <a href="http://www.google.com">
-                    <img src={require("../image/streamline-icon-cable-car-1@40x40.png")} alt=""/>
-                </a>
-                <a href="http://www.google.com">
-                    <img src={require("../image/streamline-icon-parking-p-1@40x40.png")} alt=""/>
-                </a>
-                <a href="http://www.google.com">
-                    <img src={require("../image/streamline-icon-transportation-ticket-train@40x40.png")} alt=""/>
-                </a>
+                }
+                {
+                    journeys ?
+                        <div className="">
+                            {journeys.map((j, index) => {
+                                const it = j.sections;
+                                console.log(it);
+                                return (
+                                    <div className="trajet" key={index}>
+                                        <h2>Trajet {index + 1}</h2>
+                                        {it.map((it, index) => renduIt(index, it))}
+                                    </div>
+                                );
+                            })
+                            }
+                        </div>
+                        :
+                        null
+                }
             </div>
+            <Widget/>
         </div>
     );
 }
