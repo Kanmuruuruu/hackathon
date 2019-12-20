@@ -1,10 +1,10 @@
 import React from 'react';
-
+import Fav from './Fav';
 
 const Home = () => {
     return(
         <div>
-            bonjour
+                <Fav/>
         </div>
     );
 }
